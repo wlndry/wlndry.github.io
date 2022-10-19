@@ -1,0 +1,247 @@
+@import url('https://googleapis.com/css?family=Poppins:300,400,600,700,800&display=swap');
+@font-face {
+    font-family: Poppins;
+    src: url(Poppins/Poppins-BoldItalic.ttf);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    box-sizing: border-box;
+}
+
+section{
+    position: relative;
+    widows: 100%;
+    min-height: 100vh;
+    background: #222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: #f4950f;
+    clip-path: polygon(0 0, 32% 0, 16% 100%, 0% 100%);
+}
+
+section .content{
+    position: static;
+    left: 400px;
+    top: 2px;
+    padding: 100px 50px 100px 150px;
+    box-sizing: border-box;
+}
+section h2{
+    color: #fff;
+    line-height: 1.4em;
+    font-weight: 500;
+    font-size: 3em;
+}
+section span{
+    color: #f4950f;
+    font-size: 1.3em;
+    font-weight: 1000;
+}
+
+section p{
+    color: #fff;
+    font-size: 1.3em;
+}
+section .imgbox{
+    position: absolute;
+    padding-left: 125px;
+    padding-top: 95px;
+}
+
+.logo {
+    position: relative;
+    max-width: 140px;
+    bottom: 170px;
+    left: 30px;
+}
+section .imgbox img{
+    max-width: 400px;
+}
+
+.nav
+{
+    position: relative;
+    bottom: 300px;
+    left: 700px;
+    display: flex;
+    border-left: 5px solid #f4950f;
+    padding-left: 20px;
+}
+
+.nav li{
+    list-style: none;
+}
+
+.nav li a{
+    text-decoration: none;
+    color: #fff;
+    margin-right: 30px;
+    font-size: 1.3em;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.nav li a:hover
+{
+    color: #f4950f;
+ 
+}
+
+
+
+
+
+.kontak{
+    position: relative;
+    widows: 100%;
+    min-height: 100vh;
+    background: #222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.kontak:before{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: #f4950f;
+    clip-path: inset(0 0 0 70%);
+}
+
+.kontak1 {
+    position:relative;
+    box-sizing: border-box;
+}
+
+.kontak1 h1{
+    color: #f4950f;
+    font-size: 3.5em;
+    font-weight: 1000;
+    width: 400px;
+    line-height: 0.8em;
+}
+.kontak1 h2{
+    color: #fff;
+    line-height: 1em;
+    font-weight: 500;
+    font-size: 2em;
+}
+
+.kontak1 h3{
+    color: #f4950f;
+    font-weight: 500;
+    font-size: 2em;
+}
+
+.data {
+    position:relative;
+    box-sizing: border-box;
+    float: right;
+    right: 100px;
+}
+.data h4{
+        color: #222;
+        line-height: 0.1mm;
+        font-weight: 500;
+        font-size: 1.2em;
+        
+}
+
+.data p{
+    color: #fff;
+    font-size: 1em;
+}
+
+.icon {
+    position: absolute;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    top: 110%;
+}
+
+.tombol{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-color: #f4950f;
+    border-radius: 30%;
+    margin: 10px;
+    box-sizing: 0 5px 15px -5px #00000070;
+    overflow: hidden;
+    position: relative;
+    color: #12100f;
+    left: 500px;
+}
+
+.tombol i{
+    transition: 0.2s linear;
+    font-size: 26px;
+    line-height: 60px;
+}
+
+.tombol:hover i {
+    transform: scale(1.3);
+    color: black;
+}
+
+.tombol::before{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    left: -100%;
+    top: 90%;
+    transform: rotate(45deg);
+    background-color: #f4950f;
+}
+
+.tombol:hover::before{
+    left: -10%;
+    top: -10%;
+    animation: aaa 0.7s 1; 
+}
+
+@keyframes aaa{
+    0%{
+        left: -10%;
+        top: -10%;
+    }
+    50%{
+        left: -10%;
+        top: -10%;
+    }
+    100%{
+        left: -10%;
+        top: -10%;
+    }
+}
+
+.tombol2{
+    display: inline-block;
+    background: #222;
+    color:#fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1em;
+    padding: 10px 10px;
+    font-weight: 700;
+    float: right;
+}
